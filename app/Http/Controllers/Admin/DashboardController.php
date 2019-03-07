@@ -20,7 +20,7 @@ class DashboardController extends Controller
 			'title' => self::title,
 			'slug' => self::slug
 		);
-		
+
 		return view('admin.dashboard.index', compact('title'));
 		
 	}

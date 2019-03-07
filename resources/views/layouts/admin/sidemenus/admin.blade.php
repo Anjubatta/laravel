@@ -7,7 +7,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="{{ ($title['active']=='setting')?'active':'' }}"><a href="{{route('admin.settings.index')}}"><i class="fa fa-circle-o"></i> Settings</a></li>
+            <li class="{{ ($title['active']=='profile')?'active':'' }}"><a href="{{route('admin.profile.index')}}"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li class="{{ ($title['active']=='settings')?'active':'' }}"><a href="{{route('admin.settings.index')}}"><i class="fa fa-circle-o"></i> Settings</a></li>
            
           </ul>
         </li>

@@ -120,8 +120,8 @@ class Web_settingsController extends Controller
 			$update->maintenance_mode = $request->maintenance_mode;		
 			$update->update();
 		
-			
-		alert()->success('Success', ' updated!');
+			alert()->success('Success Message', 'updated');
+		
 		return redirect()->route('admin.settings.index');
 	}
 

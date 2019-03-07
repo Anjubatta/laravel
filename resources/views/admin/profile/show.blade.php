@@ -3,7 +3,7 @@
 <div class="row">
   <div class="col-md-12">
     <div class="tile">
-			<a href="{{ route('admin.settings.edit', $setting->id) }}" class="company_edit">
+			<a href="{{ route('admin.profile.edit', $profile->id) }}" class="company_edit">
               <i class="fa fa-pencil-square-o"></i> Edit
             </a>  
 			
@@ -11,39 +11,27 @@
     	<div class="tile-body">
     		<div class="row">
           <div class="col-md-4">
-            <img style="width:100%" src="{{ asset('uploads/site/'.$setting->logo) }}">
+            <img style="width:100%" src="{{ asset('uploads/users/'.$profile->image) }}">
           </div>
 
           <div class="col-md-8">
 
               <p>
-                <strong>Site Title</strong>: 
-                {{ $setting->sitetitle }}
+                <strong>First Name </strong>: 
+                {{ $profile->fname }}
               </p>
               <p>
-                <strong>Comapny Email</strong>: 
-                {{ $setting->admin_email }}
+                <strong>Last Name</strong>: 
+                {{ $profile->lname }}
               </p>
 			<p>
-                <strong>Support Email</strong>: 
-                {{ $setting->support_email }}
+                <strong>Email</strong>: 
+                {{ $profile->email }}
              </p>
-			<p>
-                <strong>Company Address</strong>: 
-                {{ $setting->company_address }}
-             </p>
-
+			
           </div>
         </div>
 
-          <p>
-            <strong>Status</strong>: 
-            @if($setting->maintenance_mode=='1')
-            Active
-            @else
-            Not active
-            @endif
-          </p>
 
         </div>    		
 

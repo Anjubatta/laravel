@@ -30,6 +30,9 @@ Route::group(['middleware' => 'auth'], function() {
 		//web settings
 		Route::resource('/settings', 'Admin\Web_settingsController', ['as' => 'admin']);
 		
+		//User Profile
+		Route::resource('/profile', 'Admin\ProfileController', ['as' => 'admin']);
+		
 		
 		
 	});
