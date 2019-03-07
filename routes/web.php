@@ -24,8 +24,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware' => 'auth'], function() {
 
 	Route::group(['middleware' => 'check-permission:admin', 'prefix' => 'admin'], function() {
-		
+		//Admin Dashboard 
 		Route::get('/dashboard', 'Admin\DashboardController@index')->name('admin.dashboard.index');
+		
+		//web settings
+		Route::resource('/settings', 'Admin\Web_settingsController', ['as' => 'admin']);
+		
+		
 		
 	});
 });
