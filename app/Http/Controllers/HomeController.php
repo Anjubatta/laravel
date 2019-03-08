@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+	
+	const active = 'dashboard';
+	const title = 'Dashboard';
+	const slug = 'dashboard';
+	
     /**
      * Create a new controller instance.
      *
@@ -23,6 +28,13 @@ class HomeController extends Controller
      */
     public function index()
     {
+	
+		$title = array(
+			'active' => self::active,
+			'title' => self::title,
+			'slug' => self::slug
+		);
+		
         return view('home');
     }
 }

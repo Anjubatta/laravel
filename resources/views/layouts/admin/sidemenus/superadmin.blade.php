@@ -9,5 +9,7 @@
           <ul class="treeview-menu">
             <li class="{{ ($title['active']=='setting')?'active':'' }}"><a href="{{route('admin.dashboard.index')}}"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
            
-          </ul>
+		   <li class="{{ ($title['active']=='chnagepassword')?'active':'' }}"><a href="{{route('admin.chnagepassword.index')}}"><i class="fa fa-circle-o"></i> Change Password</a></li>
+           
+		   </ul>
         </li>

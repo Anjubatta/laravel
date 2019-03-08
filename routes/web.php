@@ -33,7 +33,8 @@ Route::group(['middleware' => 'auth'], function() {
 		//User Profile
 		Route::resource('/profile', 'Admin\ProfileController', ['as' => 'admin']);
 		
-		
-		
+		//Change Password
+		Route::resource('/changepassword', 'Admin\ChangePasswordController', ['as' => 'admin']);
+				
 	});
 });

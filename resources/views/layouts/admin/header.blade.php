@@ -10,6 +10,8 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="site-url" content="{{ asset('/') }}">
 		
+  <link rel="stylesheet" href="{{asset('admin/style.css')}}">	
+  
   <link rel="stylesheet" href="{{asset('admin/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{asset('admin/bower_components/font-awesome/css/font-awesome.min.css')}}">

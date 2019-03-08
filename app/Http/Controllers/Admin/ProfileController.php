@@ -6,6 +6,7 @@ use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Intervention\Image\ImageManagerStatic as Image;
+
 class ProfileController extends Controller
 {
 	const active = 'profile';
@@ -47,6 +48,7 @@ class ProfileController extends Controller
 		
 		return view('admin.profile.edit', compact('title', 'profile'));
 	}
+	
 public function show(User $profile)
 	{
 	
