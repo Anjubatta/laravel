@@ -2,7 +2,7 @@
 @section('content')
 <div class="row">
   <div class="col-md-12">
-    <div class="tile">
+    <div class="tile show-prof">
 			<a href="{{ route('admin.profile.edit', $profile->id) }}" class="company_edit">
               <i class="fa fa-pencil-square-o"></i> Edit
             </a>  
@@ -10,11 +10,11 @@
 
     	<div class="tile-body">
     		<div class="row">
-          <div class="col-md-4">
+          <div class="col-md-2">
             <img style="width:100%" src="{{ asset('uploads/users/'.$profile->image) }}">
           </div>
 
-          <div class="col-md-8">
+          <div class="col-md-10">
 
               <p>
                 <strong>First Name </strong>: 

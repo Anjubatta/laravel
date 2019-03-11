@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('content')
-<div class="row">
-  <div class="col-md-8">
+<div class="row edit-settings">
+  <div class="col-md-12">
     <div class="tile">
        <div class="tile-title green">
      

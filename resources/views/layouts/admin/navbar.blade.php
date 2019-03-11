@@ -35,11 +35,11 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="{{route('admin.profile.index')}}" class="btn btn-default btn-flat">Profile</a>
+                  <a href="{{route('admin.profile.index')}}" class="btn btn-default btn-flat top-btn">Profile</a>
                 </div>
                 <div class="pull-right">
                   
-				   <a class="btn btn-default btn-flat" href="{{ route('logout') }}"
+				   <a class="btn btn-default btn-flat top-btn" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}

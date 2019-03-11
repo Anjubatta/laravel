@@ -33,7 +33,7 @@ class ChangePasswordController extends Controller
         $this->validate($request, [
             'current' => 'required',
             'password' => 'required|confirmed',
-            'cpassword' => 'required'
+            'password_confirmation' => 'required'
         ]);
 
         $user = User::find(Auth::id());

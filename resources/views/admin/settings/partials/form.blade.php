@@ -5,17 +5,18 @@
 </div>
 
 <div class="form-group {!! ($errors->has('logo') ? 'has-error' : '') !!}">
-    {!! Form::label('logo',' Student image', ['class' => 'control-label']) !!}
-    {!! Form::file('logo', null, ['class' => 'form-control' . ($errors->has('logo') ? ' is-invalid' : '') ]) !!}
+    
     {!! $errors->first('logo', '<span class="help-block">:message</span>') !!}
     @if(Request::segment(4)=='edit')
    
         @if(@$setting->logo)
         <span class="show-image">
             <img src="{{ asset('uploads/site/'.$setting->logo) }}" width="200px">
-        </span>
+			</span>
         @endif
     @endif
+	{!! Form::label('logo',' Student image', ['class' => 'control-label']) !!}
+    {!! Form::file('logo', null, ['class' => 'form-control' . ($errors->has('logo') ? ' is-invalid' : '') ]) !!}
 </div>
 
 <div class="form-group {!! ($errors->has('email') ? 'has-error' : '') !!}">

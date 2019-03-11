@@ -1,8 +1,8 @@
 @extends('layouts.admin')
 @section('content')
 <div class="row">
-  <div class="col-md-8">
-    <div class="tile">
+  <div class="col-md-12">
+    <div class="tile edit-prof">
        <div class="tile-title green">
      
           <a href="{{ route('admin.profile.index') }}" class="btn btn-outline-warning table_top_btn"><i class="fa fa-arrow-left"></i> Back</i></a>

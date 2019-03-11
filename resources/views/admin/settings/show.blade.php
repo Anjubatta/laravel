@@ -8,13 +8,12 @@
             </a>  
 			
 
-    	<div class="tile-body">
+    	<div class="tile-body sho-settings">
     		<div class="row">
-          <div class="col-md-4">
+          <div class="col-md-12">
             <img style="width:100%" src="{{ asset('uploads/site/'.$setting->logo) }}">
           </div>
 
-          <div class="col-md-8">
 
               <p>
                 <strong>Site Title</strong>: 
@@ -33,8 +32,8 @@
                 {{ $setting->company_address }}
              </p>
 
-          </div>
-        </div>
+
+
 
           <p>
             <strong>Status</strong>: 
@@ -44,7 +43,7 @@
             Not active
             @endif
           </p>
-
+          </div>
         </div>    		
 
     	</div>
